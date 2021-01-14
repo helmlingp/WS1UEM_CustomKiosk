@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration 
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    >
+    <Profiles>
+        <Profile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}">
+            <AllAppsList>
+                <AllowedApps>
+					          <App DesktopAppPath="C:\Program Files (x86)\VMware\VMware Horizon View Client\vmware-view.exe"/>
+					          <App DesktopAppPath="C:\Program Files (x86)\VMware\VMware Horizon View Client\x64\vmware-remotemks.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\ApplicationManagerWin32.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.Win32.ModernApp.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.WinPC.Updater.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWACMClient.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWProcessCommands.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWWindowsIpc.exe"/>
+					          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
+                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"/>
+			          </AllowedApps>
+            </AllAppsList>         
+            <StartLayout>
+				<![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+  <LayoutOptions StartTileGroupCellWidth="6" />
+  <DefaultLayoutOverride>
+    <StartLayoutCollection>
+      <defaultlayout:StartLayout GroupCellWidth="6">
+        <start:Group Name="CUSTOMER APPS">
+          <start:DesktopApplicationTile Size="2x2" Column="4" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\CUSTOMER\Office365.lnk" />
+          <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\CUSTOMER\Intranet.lnk" />
+          <start:DesktopApplicationTile Size="2x2" Column="0" Row="2" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\VMware Horizon Client.lnk" />
+        </start:Group>
+      </defaultlayout:StartLayout>
+    </StartLayoutCollection>
+  </DefaultLayoutOverride>
+</LayoutModificationTemplate>
+                ]]>
+			</StartLayout>
+            <Taskbar ShowTaskbar="true"/>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <Config>
+            <AutoLogonAccount/>
+            <DefaultProfile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}"/>
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>
