@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+  <Profiles>
+    <Profile Id="{eebfde74-2690-4fc6-9b68-f52a0e0eac11}">
+      <AllAppsList>
+        <AllowedApps>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\ApplicationManagerWin32.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.Win32.ModernApp.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.WinPC.Updater.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWACMClient.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWProcessCommands.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWWindowsIpc.exe"/>
+          <App AppUserModelId="Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App" r1809:AutoLaunch="true"/>
+        </AllowedApps>
+      </AllAppsList>
+      <StartLayout><![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+        xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" 
+        xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+          <LayoutOptions StartTileGroupCellWidth="6" />
+            <DefaultLayoutOverride>
+              <StartLayoutCollection>
+                <defaultlayout:StartLayout GroupCellWidth="6">
+                  <start:Group Name="Kiosk">
+                    <start:Tile AppUserModelID="Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App" r1809:AutoLaunch="true" Size="6x6" Column="0" Row="0" />
+                  </start:Group>
+                </defaultlayout:StartLayout>
+              </StartLayoutCollection>
+            </DefaultLayoutOverride>
+          </LayoutModificationTemplate>
+        ]]>
+       </StartLayout>
+            <Taskbar ShowTaskbar="false"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+        <AutoLogonAccount/>
+        <DefaultProfile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
