@@ -1,0 +1,57 @@
+
+<AssignedAccessConfiguration 
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+  xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+  >
+  <Profiles>
+    <Profile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}">
+      <AllAppsList>
+        <AllowedApps>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\ApplicationManagerWin32.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor64.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor86.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.Win32.ModernApp.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.WinPC.Updater.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWACMClient.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWProcessCommands.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AwWindowsIpc.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\CertificateWinForm.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\LockDevice.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\NativeEnrollment.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\StorageUpgrade.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\TaskScheduler.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\VMware.Hub.Win32Agent.AppXInstaller.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\Win32AgentIPC.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\Resources\AW.WinPC.Updater.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\Telemetry\vmwosqext.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\UEM\X64\UEMBaselines.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\UEM\X86\UEMBaselines.exe"/>
+          <App AppUserModelId="AirWatchLLC.WorkspaceONEIntelligentHub_htcwkw4rx2gx4!App"/>
+          
+          <App DesktopAppPath="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" rs5:AutoLaunch="true" rs5:AutoLaunchArguments="-Kiosk URLTOLAUNCH"/>
+        </AllowedApps>
+      </AllAppsList>
+      <StartLayout>
+      <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+        <LayoutOptions StartTileGroupCellWidth="6" />
+          <DefaultLayoutOverride>
+            <StartLayoutCollection>
+              <defaultlayout:StartLayout GroupCellWidth="6">
+                <start:Group Name="Kiosk">
+                <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Google Chrome.lnk" />
+                </start:Group>
+              </defaultlayout:StartLayout>
+            </StartLayoutCollection>
+          </DefaultLayoutOverride>
+        </LayoutModificationTemplate>]]>
+      </StartLayout>
+      <Taskbar ShowTaskbar="false"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <AutoLogonAccount />
+      <DefaultProfile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
