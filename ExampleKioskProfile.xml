@@ -11,16 +11,17 @@
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor64.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor86.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.Win32.ModernApp.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.WinPC.Updater.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWACMClient.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWProcessCommands.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AwWindowsIpc.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\CertificateWinForm.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\LockDevice.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\NativeEnrollment.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\StorageUpgrade.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\TaskScheduler.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\VMware.Hub.Win32Agent.AppXInstaller.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\Win32AgentIPC.exe"/>
-          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.WinPC.Updater.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\Resources\AW.WinPC.Updater.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\Telemetry\vmwosqext.exe"/>
           <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\UEM\X64\UEMBaselines.exe"/>
@@ -42,6 +43,7 @@
                 <start:Group Name="Kiosk">
                   <start:Tile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" Size="2x2" Column="0" Row="0" />
                   <start:Tile AppUserModelID="AirWatchLLC.WorkspaceONEIntelligentHub_htcwkw4rx2gx4!App" Size="2x2" Column="2" Row="0" />
+                  <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\CUSTOMER\Intranet.lnk" />
                 </start:Group>
               </defaultlayout:StartLayout>
             </StartLayoutCollection>
