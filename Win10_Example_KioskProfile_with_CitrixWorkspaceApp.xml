@@ -4,67 +4,70 @@
     <Target>
       <LocURI>./Vendor/MSFT/AssignedAccess/Configuration</LocURI>
     </Target>
-    <Data><?xml version="1.0" encoding="utf-8" ?>
-<AssignedAccessConfiguration 
-    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
-    >
-    <Profiles>
-        <Profile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}">
-            <AllAppsList>
-                <AllowedApps>
-                    <!-- Applications -->
-                    <App DesktopAppPath="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"/>
-                    <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"/>
-                    <App AppUserModelId="Citrix.Workspace_8r8r2r2r2r2r2!App"/>
+    <Data>&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&amp;gt;
+&amp;lt;AssignedAccessConfiguration 
+    xmlns=&quot;http://schemas.microsoft.com/AssignedAccess/2017/config&quot;
+    xmlns:rs5=&quot;http://schemas.microsoft.com/AssignedAccess/201810/config&quot;
+    &amp;gt;
+    &amp;lt;Profiles&amp;gt;
+        &amp;lt;Profile Id=&quot;{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}&quot;&amp;gt;
+            &amp;lt;AllAppsList&amp;gt;
+                &amp;lt;AllowedApps&amp;gt;
+                    &amp;lt;!-- Applications --&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe&quot;/&amp;gt;
+                    &amp;lt;App AppUserModelId=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot;/&amp;gt;
+                    &amp;lt;App AppUserModelId=&quot;Citrix.Workspace_8r8r2r2r2r2r2!App&quot;/&amp;gt;
 
-                    <!-- Workspace ONE Agent & Assist -->
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor64.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor86.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.Win32.ModernApp.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.WinPC.Updater.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWACMClient.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWProcessCommands.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AwWindowsIpc.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\CertificateWinForm.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\NativeEnrollment.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\StorageUpgrade.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\TaskScheduler.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\UEM\X64\UEMBaselines.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\UEM\X86\UEMBaselines.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\Win32AgentIPC.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\WorkspaceONE.Hub.Win32Agent.AppXInstaller.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\Deem\Omnissa-Telemetry-Agent.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\Dem\DemEnterprise-x64.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\HealthMonitoring\WorkspaceONEHubHealthMonitoring.exe"/>
-                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\Sfd\AppDeploymentAgent-x64.exe"/>
-                    <App AppUserModelId="AirWatchLLC.WorkspaceONEIntelligentHub_htcwkw4rx2gx4!App"/>
-			          </AllowedApps>
-            </AllAppsList>         
-            <StartLayout>
-				<![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
-          <LayoutOptions StartTileGroupCellWidth="6" />
-          <DefaultLayoutOverride>
-            <StartLayoutCollection>
-              <defaultlayout:StartLayout GroupCellWidth="6">
-                <start:Group Name="Digital Workspace">
-                  <start:Tile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" Size="2x2" Column="0" Row="0" />
-                  <start:Tile AppUserModelID="AirWatchLLC.WorkspaceONEIntelligentHub_htcwkw4rx2gx4!App" Size="2x2" Column="2" Row="0" />
-                  <start:Tile AppUserModelID="Citrix.Workspace_8r8r2r2r2r2r2!App" Size="2x2" Column="4" Row="0" />
-                </start:Group>
-              </defaultlayout:StartLayout>
-            </StartLayoutCollection>
-          </DefaultLayoutOverride>
-        </LayoutModificationTemplate>
-                ]]>
-			</StartLayout>
-            <Taskbar ShowTaskbar="true"/>
-        </Profile>
-    </Profiles>
-    <Configs>
-        <Config>
-            <AutoLogonAccount/>
-            <DefaultProfile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}"/>
-        </Config>
-    </Configs>
-</AssignedAccessConfiguration>
+                    &amp;lt;!-- Workspace ONE Agent &amp; Assist --&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor64.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor86.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\AW.Win32.ModernApp.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\AW.WinPC.Updater.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\AWACMClient.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\AWProcessCommands.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\AwWindowsIpc.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\CertificateWinForm.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\NativeEnrollment.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\StorageUpgrade.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\TaskScheduler.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\UEM\X64\UEMBaselines.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\UEM\X86\UEMBaselines.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\Win32AgentIPC.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\AgentUI\WorkspaceONE.Hub.Win32Agent.AppXInstaller.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\Deem\Omnissa-Telemetry-Agent.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\Dem\DemEnterprise-x64.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\HealthMonitoring\WorkspaceONEHubHealthMonitoring.exe&quot;/&amp;gt;
+                    &amp;lt;App DesktopAppPath=&quot;C:\Program Files (x86)\Airwatch\Sfd\AppDeploymentAgent-x64.exe&quot;/&amp;gt;
+                    &amp;lt;App AppUserModelId=&quot;AirWatchLLC.WorkspaceONEIntelligentHub_htcwkw4rx2gx4!App&quot;/&amp;gt;
+			          &amp;lt;/AllowedApps&amp;gt;
+            &amp;lt;/AllAppsList&amp;gt;         
+            &amp;lt;StartLayout&amp;gt;
+				&amp;lt;![CDATA[&amp;lt;LayoutModificationTemplate xmlns:defaultlayout=&quot;http://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot; xmlns:start=&quot;http://schemas.microsoft.com/Start/2014/StartLayout&quot; Version=&quot;1&quot; xmlns=&quot;http://schemas.microsoft.com/Start/2014/LayoutModification&quot;&amp;gt;
+          &amp;lt;LayoutOptions StartTileGroupCellWidth=&quot;6&quot; /&amp;gt;
+          &amp;lt;DefaultLayoutOverride&amp;gt;
+            &amp;lt;StartLayoutCollection&amp;gt;
+              &amp;lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot;&amp;gt;
+                &amp;lt;start:Group Name=&quot;Digital Workspace&quot;&amp;gt;
+                  &amp;lt;start:Tile AppUserModelID=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot; Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; /&amp;gt;
+                  &amp;lt;start:Tile AppUserModelID=&quot;AirWatchLLC.WorkspaceONEIntelligentHub_htcwkw4rx2gx4!App&quot; Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; /&amp;gt;
+                  &amp;lt;start:Tile AppUserModelID=&quot;Citrix.Workspace_8r8r2r2r2r2r2!App&quot; Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; /&amp;gt;
+                &amp;lt;/start:Group&amp;gt;
+              &amp;lt;/defaultlayout:StartLayout&amp;gt;
+            &amp;lt;/StartLayoutCollection&amp;gt;
+          &amp;lt;/DefaultLayoutOverride&amp;gt;
+        &amp;lt;/LayoutModificationTemplate&amp;gt;
+                ]]&amp;gt;
+			&amp;lt;/StartLayout&amp;gt;
+            &amp;lt;Taskbar ShowTaskbar=&quot;true&quot;/&amp;gt;
+        &amp;lt;/Profile&amp;gt;
+    &amp;lt;/Profiles&amp;gt;
+    &amp;lt;Configs&amp;gt;
+        &amp;lt;Config&amp;gt;
+            &amp;lt;AutoLogonAccount/&amp;gt;
+            &amp;lt;DefaultProfile Id=&quot;{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}&quot;/&amp;gt;
+        &amp;lt;/Config&amp;gt;
+    &amp;lt;/Configs&amp;gt;
+&amp;lt;/AssignedAccessConfiguration&amp;gt;</Data>
+  </Item>
+</Replace>
+
