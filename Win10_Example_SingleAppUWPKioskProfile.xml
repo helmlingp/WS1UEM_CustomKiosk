@@ -1,0 +1,69 @@
+<Replace>
+  <CmdID>d77095ff-4f94-4eb2-bcc1-4cef4b8e729e</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/AssignedAccess/Configuration</LocURI>
+    </Target>
+    <Data><?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration 
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    xmlns:r1809="http://schemas.microsoft.com/AssignedAccess/201810/config"
+    >
+    <Profiles>
+        <Profile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}">
+            <AllAppsList>
+                <AllowedApps>
+                    <!-- Applications -->
+                    <App DesktopAppPath="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"/>
+          
+                    <!-- Workspace ONE Agent & Assist -->
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor64.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor86.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.Win32.ModernApp.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.WinPC.Updater.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWACMClient.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWProcessCommands.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AwWindowsIpc.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\CertificateWinForm.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\NativeEnrollment.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\StorageUpgrade.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\TaskScheduler.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\UEM\X64\UEMBaselines.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\UEM\X86\UEMBaselines.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\Win32AgentIPC.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\WorkspaceONE.Hub.Win32Agent.AppXInstaller.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\Deem\Omnissa-Telemetry-Agent.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\Dem\DemEnterprise-x64.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\HealthMonitoring\WorkspaceONEHubHealthMonitoring.exe"/>
+                    <App DesktopAppPath="C:\Program Files (x86)\Airwatch\Sfd\AppDeploymentAgent-x64.exe"/>
+                    <App AppUserModelId="AirWatchLLC.WorkspaceONEIntelligentHub_htcwkw4rx2gx4!App"/>
+                    <App AppUserModelId="Citrix.Workspace_8r8r2r2r2r2r2!App"/>  
+			          </AllowedApps>
+            </AllAppsList>         
+            <StartLayout>
+				<![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+  <LayoutOptions StartTileGroupCellWidth="6" />
+  <DefaultLayoutOverride>
+    <StartLayoutCollection>
+      <defaultlayout:StartLayout GroupCellWidth="6">
+        <start:Group Name="Kiosk">
+          <start:Tile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" Size="2x2" Column="0" Row="0" />
+          <start:Tile AppUserModelID="Citrix.Workspace_8r8r2r2r2r2r2!App" Size="2x2" Column="2" Row="0" />
+        </start:Group>
+      </defaultlayout:StartLayout>
+    </StartLayoutCollection>
+  </DefaultLayoutOverride>
+</LayoutModificationTemplate>
+                ]]>
+			</StartLayout>
+            <Taskbar ShowTaskbar="true"/>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <Config>
+            <AutoLogonAccount/>
+            <DefaultProfile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}"/>
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>

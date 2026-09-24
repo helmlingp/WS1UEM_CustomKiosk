@@ -1,0 +1,89 @@
+<Replace>
+  <CmdID>d77095ff-4f94-4eb2-bcc1-4cef4b8e729e</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/AssignedAccess/Configuration</LocURI>
+    </Target>
+    <Data><?xml version="1.0" encoding="utf-8" ?>;
+<AssignedAccessConfiguration 
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+  xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+  xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config"
+  >
+  <Profiles>
+    <Profile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}">
+      <AllAppsList>
+        <AllowedApps>
+          <!-- Applications -->
+          <App DesktopAppPath="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"/>
+          <App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>
+          <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!PdfReader"/>
+          <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"/>
+          <App AppUserModelId="Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App" rs5:AutoLaunch="true"/>
+          
+          <!-- Workspace ONE Agent & Assist -->
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor64.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.ProtectionAgent.PowershellExecutor86.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.Win32.ModernApp.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AW.WinPC.Updater.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWACMClient.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AWProcessCommands.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\AwWindowsIpc.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\CertificateWinForm.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\NativeEnrollment.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\StorageUpgrade.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\TaskScheduler.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\UEM\X64\UEMBaselines.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\UEM\X86\UEMBaselines.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\Win32AgentIPC.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\AgentUI\WorkspaceONE.Hub.Win32Agent.AppXInstaller.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\Deem\Omnissa-Telemetry-Agent.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\Dem\DemEnterprise-x64.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\HealthMonitoring\WorkspaceONEHubHealthMonitoring.exe"/>
+          <App DesktopAppPath="C:\Program Files (x86)\Airwatch\Sfd\AppDeploymentAgent-x64.exe"/>
+          <App AppUserModelId="AirWatchLLC.WorkspaceONEIntelligentHub_htcwkw4rx2gx4!App"/>
+          
+          <!-- Security & Management Agents -->
+          <App DesktopAppPath="C:\Program Files (x86)\Zscaler\ZSATray\ZSATray.exe"/>
+          <App DesktopAppPath="C:\Program Files\CrowdStrike\CSFalconService.exe"/>
+
+          <!-- System Shell & Settings -->
+          <App DesktopAppPath="C:\Windows\System32\DeployCmd.exe"/>
+          <App DesktopAppPath="C:\windows\system32\ctfmon.exe"/>
+          <App AppUserModelId="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel"/>
+        </AllowedApps>
+      </AllAppsList>
+      <StartLayout>
+      <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+        <LayoutOptions StartTileGroupCellWidth="6" />
+          <DefaultLayoutOverride>
+            <StartLayoutCollection>
+              <defaultlayout:StartLayout GroupCellWidth="6">
+                <start:Group Name="Kiosk">
+                  <start:Tile AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" Size="2x2" Column="0" Row="0" />
+                  <start:Tile AppUserModelID="AirWatchLLC.WorkspaceONEIntelligentHub_htcwkw4rx2gx4!App" Size="2x2" Column="2" Row="0" />
+                </start:Group>
+              </defaultlayout:StartLayout>
+            </StartLayoutCollection>
+          </DefaultLayoutOverride>
+        </LayoutModificationTemplate>]]>
+      </StartLayout>
+      <v5:StartPins><![CDATA[{
+        "pinnedList":[
+          {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell ISE.lnk"},            
+          {"packagedAppId":"AirWatchLLC.WorkspaceONEAssist_htcwkw4rx2gx4!App"}
+        ]
+        }]]>
+      </v5:StartPins>
+      <Taskbar ShowTaskbar="true"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <UserGroup Type="AzureActiveDirectoryGroup" Name="698c193e-bcb0-4ff0-9ca1-46a8808478ca" />
+      <DefaultProfile Id="{2d37d0db-19a0-48ad-8b8b-976a7cbf556d}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration></Data>
+  </Item>
+</Replace>
